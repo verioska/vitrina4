@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 body{
     background-color:#e0e0e0;
@@ -142,10 +143,9 @@ div#infopage6{
     color: #c4c4c4;
     margin-bottom: -10px;
 }
-div.select-wrapper{
-    width: 200px;
-    margin-left: 70px;
-    margin-right: 30px;
+div.select-wrapper span {
+    color:#212121;
+    font-family:  'Titillium Web', sans-serif;
 }
 .select-wrapper input.select-dropdown{
     color:#212121;
