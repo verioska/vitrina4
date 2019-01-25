@@ -50,7 +50,7 @@ $(document).on('click', '#movie1', (event) => {
 })
 
 //Click de la imagen Aquaman
-fetch("http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   document.getElementById("popular").innerHTML += `
@@ -65,7 +65,7 @@ $(document).on('click', '#movie2', (event) => {
   document.getElementById('page7').style.display='none';
   const title = event.target.attributes[1].value;
   console.log(title,"es el titulo")
-  fetch("http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
+  fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
   .then(data=>data.json())
   .then(data=>{
     let id=data.imdbID
@@ -93,7 +93,7 @@ $(document).on('click', '#movie2', (event) => {
 })
 
 //Click de la imagen Glass
-fetch("http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   document.getElementById("popular").innerHTML += `
@@ -109,7 +109,7 @@ $(document).on('click', '#movie3', (event) => {
   document.getElementById('page7').style.display='none';
   const title = event.target.attributes[1].value;
   console.log(title,"es el titulo")
-  fetch("http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
+  fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
   .then(data=>data.json())
   .then(data=>{
     let id=data.imdbID
@@ -137,7 +137,7 @@ $(document).on('click', '#movie3', (event) => {
 
 //Click de la imagen Venem
 
-fetch("http://www.omdbapi.com/?t=venom&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=venom&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   document.getElementById("popular").innerHTML += `
@@ -184,7 +184,7 @@ document.getElementById('movies').addEventListener('click',
 (event) => {
 event.preventDefault();
 
-fetch("https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&primary_release_year=2019&page=1")
+fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&primary_release_year=2019&page=1")
     .then(data=>data.json())
     .then(data=>{
       characters= data.results;
