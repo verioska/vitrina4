@@ -378,37 +378,37 @@ document.getElementById("filter_year").addEventListener("change", (event)=>{
  })
 
  //Boton de busqueda
-document.getElementById('myInput').addEventListener("keydown", (e) => {
- if(e.keyCode === 13){
-  document.getElementById('page1').style.display='none';
-  document.getElementById('page2').style.display='none';
-  document.getElementById('page3').style.display='none';
-  document.getElementById('page4').style.display='none';
-  document.getElementById('page5').style.display='none';
-  document.getElementById('page6').style.display='none';
-  document.getElementById('page7').style.display='block';
-  let tittle= document.getElementById('myInput').value
-  console.log(tittle,"es el titulo")
-  document.getElementById('page7').innerHTML="";
-  fetch("http://www.omdbapi.com/?t="+tittle+"&apikey=7f7da682&y=2019")
-  .then(data=>data.json())
-  .then(data=>{
-     console.log(data)  
-     document.getElementById('page7').innerHTML += `
-     <div class="container">
-     <div id="card-movie" class="col s12 m12" >
-     <div id="search-card" class="card">
-     <img class="imagen-search responsive-img" src="${data.Poster}" >
-     <div class="card-content">
-     <span class="card-title activator grey-text text-darken-2"><p class="tittle-search">${data.Title}</p></span>
+ document.getElementById('myInput').addEventListener("keydown", (e) => {
+  if(e.keyCode === 13){
+   document.getElementById('page1').style.display='none';
+   document.getElementById('page2').style.display='none';
+   document.getElementById('page3').style.display='none';
+   document.getElementById('page4').style.display='none';
+   document.getElementById('page5').style.display='none';
+   document.getElementById('page6').style.display='none';
+   document.getElementById('page7').style.display='block';
+   let tittle= document.getElementById('myInput').value
+   console.log(tittle,"es el titulo")
+   document.getElementById('page7').innerHTML="";
+   fetch("http://www.omdbapi.com/?t="+tittle+"&apikey=7f7da682&y=2019")
+   .then(data=>data.json())
+   .then(data=>{
+      console.log(data)  
+      document.getElementById('page7').innerHTML += `
+      <div class="container">
+       <div id="card-movie" class="col s12 m12" >
+         <div id="search-card" class="card">
+          <img class="imagen-search responsive-img" src="${data.Poster}" >
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-2"><p class="tittle-search">${data.Title}</p></span>
+           </div>
+          </div>
+       </div>
      </div>
-     </div>
-     </div>
-     </div>
-     </div>`
+   </div>`
+  })
+ }
  })
-}
-})   
 
 // //Menu responsive
 
