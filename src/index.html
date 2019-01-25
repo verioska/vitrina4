@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movies Proyect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+
+  <body>
+
+    <header>
+        
+                <div class="navbar-fixed">
+                     <nav class="navbar">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo"><img id="logo" class="responsive-img"src="http://subirimagen.me/uploads/20190124070159.png"></a>
+                            <input type="text" id="myInput"  placeholder="Busca tu estreno 2018-2019">
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a id="start">Inicio</a></li>
+                                <li><a id="movies">Peliculas</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <ul class="sidenav" id="mobile-demo">
+                        <li><a id="start-1">Inicio</a></li>
+                        <li><a id="movies-1">Peliculas</a></li>  
+                    </ul>
+        
+                </div>
+                
+
+    </header>
+        
+    
+    <div id="page1">
+            
+        <div class="slider">
+            <ul>
+            <li>
+                <img src="http://subirimagen.me/uploads/20190123115745.png" alt="">
+            </li>
+
+            <li>
+                <img src="http://subirimagen.me/uploads/20190123115851.png" alt="">
+            </li>
+            <li>
+                <img src="http://subirimagen.me/uploads/20190123115920.jpg" alt="">
+            </li>
+            <li>
+                <img src="http://subirimagen.me/uploads/20190123115954.jpg" alt="">
+            </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h5 id="movies-popular">Peliculas Destacadas</h5>
+            <section class="popular2"id="popular"></section>
+        </div>
+        
+
+    </div>
+
+
+    <div id="page2">
+
+        <div class="container">
+            <div class="row">
+                <div  id="select-filter"> 
+                    <div class="input-field col s12 m6">
+                        <select id="filter" class="icons">
+                            <option value="" disabled selected>Buscar por genero</option>
+                            <option value="28" >Accion</option>
+                            <option value="12" >Aventuras</option>
+                            <option value="16" >Animacion</option>
+                            <option value="35" >Comedia</option>
+                            <option value="80" >Crimen</option>
+                            <option value="18" >Drama</option>
+                            <option value="10751" >Familia</option>
+                            <option value="14" >Fantasia</option>
+                            <option value="36" >Historia</option>
+                            <option value="27" >Terror</option>
+                            <option value="9648" >Misterio</option>
+                            <option value="10749" >Romance</option>
+                            <option value="878" >Ciencia ficcion</option>
+                        </select>
+                        
+                    </div>
+                </div>
+    
+                    <div class="input-field col s12 m6">
+                        <select  id="filter_year"class="icons">
+                            <option value="" disabled selected>Buscar por año</option>
+                            <option value="2019" >2019</option>
+                            <option value="2018" >2018</option>
+                        </select>
+                    </div>
+
+            </div>
+        </div>
+            
+        
+    </div>
+
+
+
+    <div id="page3">
+        <div id="movies-list" class="row" ></div>
+    </div>
+        
+    <div id="page4">
+        <div id="movies-filter" class="row" ></div>
+    </div>
+        
+    <div id="page5">
+        <div id="filter-year" class="row" ></div>
+    </div>
+        
+   
+    <!--Pagina Información-->   
+
+    <div id="page6">
+
+        <div id="info-trailer" >
+            
+            <div id="trailer" class="col s12 m6">
+                         
+            </div> 
+
+            
+            <div id="info-movies" class="col s12 m6">
+                <div id="icons-start">              
+                    <i class="material-icons" style="color:#ebc90a">star</i>
+                    <i class="material-icons" style="color:#ebc90a">star</i>
+                    <i class="material-icons" style="color:#ebc90a">star</i>
+                    <i class="material-icons" style="color:#ebc90a">star_border</i>
+                    <i class="material-icons" style="color:#ebc90a">star_border</i>
+                </div>
+
+                <div id="infopage6">
+                </div>
+
+                <div id="site-icons">
+                    <a href="https://www.pelispedia.tv/" id="pelispedia"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162204.png" alt=""></a>  
+                    <a href="https://www.cuevana2.com/" id="cuevana"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162223.png" alt=""></a>  
+                    <a href="https://www.cinecalidad.to/" id="cinecalidad"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162244.png" alt=""></a>  
+                </div>
+
+            </div>
+
+        </div>
+            
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                    <div id="comments">
+                        <h2 id="comments-tittle">Comentarios</h2>
+                        
+                            <div class="row">
+                                <form id="comments-text" class="col s12">
+                                 <div class="row">
+                                    <div class="input-field col s12">
+                                      <textarea id="textarea1" class="materialize-textarea" ></textarea>
+                                    </div>
+                                 </div>
+                                </form>
+                            </div>
+                                    
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+   
+
+    <div id="page7"></div>
+    <div id="root" class="row"></div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div id="icons-media" class="row">
+                
+             <a href="https://www.instagram.com/la_vitrinamovies/?hl=es-la"><img class="responsive-img" id="instagram-icon" src="http://subirimagen.me/uploads/20190124090646.png" alt=""></a>
+             <a href="https://www.facebook.com/La-Vitrina-2292476871025051/?modal=admin_todo_tour"><img class="responsive-img" id="facebook-icon"src="http://subirimagen.me/uploads/20190124090542.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+                           
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
+
+<script>
+        $(document).ready(function(){
+        $(".button-collapse").sideNav()
+        });
+</script>
+
+ <script>
+     $('#textarea1').val('New Text');
+     M.textareaAutoResize($('#textarea1'));
+ </script>
+
+ <script>
+ $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+ </script>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
