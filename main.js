@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 window.onload =() =>{
   let movies = null;
 
-fetch("http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
 document.getElementById("popular").innerHTML += `
@@ -23,7 +23,7 @@ document.getElementById('page7').style.display='none';
 document.getElementById('page6').style.display='block';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let id=data.imdbID
@@ -50,7 +50,7 @@ fetch("http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
 })
 
 //Click de la imagen Aquaman
-fetch("http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
 document.getElementById("popular").innerHTML += `
@@ -65,7 +65,7 @@ document.getElementById('page6').style.display='block';
 document.getElementById('page7').style.display='none';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let id=data.imdbID
@@ -93,7 +93,7 @@ fetch("http://www.omdbapi.com/?t=aquaman&plot=full&apikey=7f7da682")
 })
 
 //Click de la imagen Glass
-fetch("http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
 document.getElementById("popular").innerHTML += `
@@ -109,7 +109,7 @@ document.getElementById('page6').style.display='block';
 document.getElementById('page7').style.display='none';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let id=data.imdbID
@@ -137,7 +137,7 @@ fetch("http://www.omdbapi.com/?t=glass&plot=full&apikey=7f7da682")
 
 //Click de la imagen Venem
 
-fetch("http://www.omdbapi.com/?t=venom&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=venom&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
 document.getElementById("popular").innerHTML += `
@@ -152,7 +152,7 @@ document.getElementById('page6').style.display='block';
 document.getElementById('page7').style.display='none';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t=venom&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=venom&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let id=data.imdbID
@@ -226,7 +226,7 @@ document.getElementById('page6').style.display='block';
 document.getElementById('page7').style.display='none';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let holi=data.imdbID
@@ -316,7 +316,7 @@ document.getElementById('page7').style.display='none';
 document.getElementById("filter-year").style.display='block';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let id=data.imdbID
