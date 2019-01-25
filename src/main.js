@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 window.onload =() =>{
     let movies = null;
 //Click de la imagen Bird Box
-fetch("https://cors-anywhere.herokuapp.com/"+"http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   document.getElementById("popular").innerHTML += `
@@ -23,7 +23,7 @@ $(document).on('click', '#movie1', (event) => {
   document.getElementById('page6').style.display='block';
   const title = event.target.attributes[1].value;
   console.log(title,"es el titulo")
-  fetch("http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
+  fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
   .then(data=>data.json())
   .then(data=>{
     let id=data.imdbID
