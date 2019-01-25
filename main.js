@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 window.onload =() =>{
     let movies = null;
 //Click de la imagen Bird Box
-fetch("http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/"+"http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   document.getElementById("popular").innerHTML += `
