@@ -390,7 +390,7 @@ document.getElementById("filter_year").addEventListener("change", (event)=>{
    let tittle= document.getElementById('myInput').value
    console.log(tittle,"es el titulo")
    document.getElementById('page7').innerHTML="";
-   fetch("http://www.omdbapi.com/?t="+tittle+"&apikey=7f7da682&y=2019")
+   fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+tittle+"&apikey=7f7da682&y=2019")
    .then(data=>data.json())
    .then(data=>{
       console.log(data)  
