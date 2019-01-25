@@ -195,7 +195,24 @@ img#logo{
 .sidenav-overlay{
     z-index: 995;
 }
+#search-card{
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
 
+.imagen-search.responsive-img{
+    width: 400px;
+    height: 460px;
+}
+
+.tittle-search{
+    font-size: 18px;
+    font-family:  'Titillium Web', sans-serif;
+    color:#212121;
+}
 
 @keyframes cambio {
     0% {margin-left: 0;}
@@ -222,6 +239,7 @@ ul#mobile-demo.sidenav a{
     font-family:  'Titillium Web', sans-serif;
 
 }
+
 
 @media only screen
 and (max-width: 480px){
