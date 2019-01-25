@@ -211,7 +211,9 @@ img#logo{
 .tittle-search{
     font-size: 18px;
     font-family:  'Titillium Web', sans-serif;
-    colo
+    color:#212121;
+}
+
 
 @keyframes cambio {
     0% {margin-left: 0;}
