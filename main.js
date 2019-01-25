@@ -396,16 +396,16 @@ document.getElementById('myInput').addEventListener("keydown", (e) => {
      console.log(data)  
      document.getElementById('page7').innerHTML += `
      <div class="container">
-       <div id="card-movie" class="col s6 " >
-         <div class="card" >
-            <img class="imagen-movies responsive-img"  src="${data.Poster}" >
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-2"><p class="tittle-movies">${data.Title}</p></span>
-            </div>
-         </div>  
-      </div> 
-    </div>
-  </div>` 
+     <div id="card-movie" class="col s12 m12" >
+     <div id="search-card" class="card">
+     <img class="imagen-search responsive-img" src="${data.Poster}" >
+     <div class="card-content">
+     <span class="card-title activator grey-text text-darken-2"><p class="tittle-search">${data.Title}</p></span>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>`
  })
 }
 })   
