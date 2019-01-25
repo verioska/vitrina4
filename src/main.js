@@ -281,7 +281,7 @@ document.getElementById("filter").addEventListener("change", (event)=>{
   console.log(genero)
   let year= document.getElementById("filter_year").value;
 
-  fetch("https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
+  fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
   .then(data=>data.json())
   .then(data=>{
     let gen= data.results
@@ -355,7 +355,7 @@ $(document).on('click', '#movies-filter', (event) => {
      let year= document.getElementById("filter_year").value;
      console.log(year)
      let genero = document.getElementById("filter").value;
-     fetch("https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
+     fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
      .then(data=>data.json())
      .then(data=>{
        let gen= data.results
