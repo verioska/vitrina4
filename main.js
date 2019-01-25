@@ -226,7 +226,7 @@ $(document).on('click', '#card-movie', (event) => {
   document.getElementById('page7').style.display='none';
   const title = event.target.attributes[1].value;
   console.log(title,"es el titulo")
-  fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
+  fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
   .then(data=>data.json())
   .then(data=>{
     let holi=data.imdbID
