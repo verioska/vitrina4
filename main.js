@@ -316,7 +316,7 @@ $(document).on('click', '#movies-filter', (event) => {
   document.getElementById("filter-year").style.display='block';
   const title = event.target.attributes[1].value;
   console.log(title,"es el titulo")
-  fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
+  fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
   .then(data=>data.json())
   .then(data=>{
     let id=data.imdbID
@@ -390,7 +390,7 @@ $(document).on('click', '#movies-filter', (event) => {
     let tittle= document.getElementById('myInput').value
     console.log(tittle,"es el titulo")
     document.getElementById('page7').innerHTML="";
-    fetch("http://www.omdbapi.com/?t="+tittle+"&apikey=7f7da682&y=2019")
+    fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+tittle+"&apikey=7f7da682&y=2019")
     .then(data=>data.json())
     .then(data=>{
        console.log(data)  
@@ -450,7 +450,7 @@ document.getElementById('movies-1').addEventListener('click',
 (event) => {
 event.preventDefault();
 
-fetch("https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&primary_release_year=2019&page=1")
+fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&primary_release_year=2019&page=1")
   .then(data=>data.json())
   .then(data=>{
     characters= data.results;
@@ -492,7 +492,7 @@ document.getElementById('page6').style.display='block';
 document.getElementById('page7').style.display='none';
 const title = event.target.attributes[1].value;
 console.log(title,"es el titulo")
-fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
   let holi=data.imdbID
@@ -508,7 +508,7 @@ fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
   </div>
   `
 console.log(holi)     
-fetch("https://api.themoviedb.org/3/movie/"+holi+"/videos?api_key=48819a4f88e3d597df63bebab6723d0f")
+fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/movie/"+holi+"/videos?api_key=48819a4f88e3d597df63bebab6723d0f")
 .then(data=>data.json())
   .then(data=>{
     let video=data.results
@@ -533,7 +533,7 @@ document.getElementById("filter").addEventListener("change", (event)=>{
   console.log(genero)
   let year= document.getElementById("filter_year").value;
 
-  fetch("https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
+  fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
   .then(data=>data.json())
   .then(data=>{
     let gen= data.results
@@ -568,7 +568,7 @@ $(document).on('click', '#movies-filter', (event) => {
   document.getElementById("filter-year").style.display='block';
   const title = event.target.attributes[1].value;
   console.log(title,"es el titulo")
-  fetch("http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
+  fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+title+"&plot=full&apikey=7f7da682")
   .then(data=>data.json())
   .then(data=>{
     let id=data.imdbID
@@ -607,7 +607,7 @@ $(document).on('click', '#movies-filter', (event) => {
      let year= document.getElementById("filter_year").value;
      console.log(year)
      let genero = document.getElementById("filter").value;
-     fetch("https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
+     fetch("https://cors-anywhere.herokuapp.com/https://api.themoviedb.org/3/discover/movie?api_key=48819a4f88e3d597df63bebab6723d0f&page=1&primary_release_year="+year+"&with_genres="+genero)
      .then(data=>data.json())
      .then(data=>{
        let gen= data.results
