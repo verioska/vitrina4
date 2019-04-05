@@ -33,7 +33,9 @@ input#myInput{
 }
 #instagram-icon, #facebook-icon{
     width: 40px;
-    height: 40px;    
+    height: 40px; 
+    font-size: 160%; 
+    color:white;   
 }
 .popular {
     width: 175px;
