@@ -9,6 +9,8 @@ window.onload =() =>{
 fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=bird+box&plot=full&apikey=7f7da682")
 .then(data=>data.json())
 .then(data=>{
+  console.log(data,"esta es la data ok")
+  
 document.getElementById("popular").innerHTML += `
     <img class="responsive-img"  id="movie1"  movie="${data.title}" src="${data.Poster}">`
 });
